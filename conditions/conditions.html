@@ -5,6 +5,14 @@
 	</head>
 
 	<body>
+		<form>
+			<input type="text" id="num1"  placeholder="Please enter first number"/>
+			<input type="text" id="num2"  placeholder="Please enter second number"/>
+			<input type="text" id="num3"  placeholder="Please enter third number"/>
+			<input type="text" id="num4"  placeholder="Please enter fourth number"/>
+			<input type="text" id="num5"  placeholder="Please enter fifth number"/>
+			<input type="submit" id="sub" onclick=showAnswer() />
+		</form>
 
 		<script>
 			var num1,num2,num3,num4,num5;
@@ -14,11 +22,11 @@
 			var classAvrage=0;	
 			
 			// Q1
-			num1=3;
-			num2=1;
-			num3=-7;
-			num4=21;
-			num5=43;
+			num1= document.getElementById("num1") ;
+			num2=document.getElementById("num2") ;
+			num3=-document.getElementById("num3") ;
+			num4=document.getElementById("num4") ;
+			num5=document.getElementById("num5") ;
 
 			if(num1>num2){
 			console.log(num1+" is greater than "+num2);
@@ -101,8 +109,12 @@
 				console.log("the max num is "+ num5);
 			}
 			//Q4 -simper way of doing so 
+			
 			console.log(Math.max.apply(Math,numArray));
 			
+			function showAnswer(){
+				document.write(Math.max.apply(Math,numArray));
+			};
 			
 			
 			
