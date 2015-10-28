@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CONDITIONS</title>
+	</head>
+
+	<body>
+
+		<script>
+			var num1,num2,num3,num4,num5;
+			var sumNums;
+			var numArray= new Array();
+			var students=[{name:"David",grade:80},{name:"Vinoth",grade:77},{name:"Divaya" ,grade:88},{name:"Ishitha", grade:95},{name:"Thomas", grade:68}];
+			var classAvrage=0;	
+			
+			// Q1
+			num1=3;
+			num2=1;
+			num3=-7;
+			num4=21;
+			num5=43;
+
+			if(num1>num2){
+			console.log(num1+" is greater than "+num2);
+			}
+			else if(num1<num2){
+			console.log(num2+" is greater than "+num1);
+			}
+			else{
+			console.log(num1+"equal to"+num2);
+			}
+
+			//Q2
+			num3=2;
+			sumNums= num1+num2+num3;
+
+			if(sumNums>0){
+			console.log(sumNums +" is plus");
+			}
+			else if(sumNums<0){
+			console.log(sumNums + " is minus");
+			}
+			else{
+			console.log(sumNums + "is 0");
+			}
+			
+			//Q3
+			if(num1<=num2){
+				if(num1<=num3){
+					numArray[0]=num1;
+					if(num2<=num3){
+					numArray[1]=num2;
+					numArray[2]=num3;
+					}
+					else{ 						
+					numArray[1]=num3;
+					numArray[2]=num2;
+					}
+				}
+				else{
+					numArray[0]=num3;
+					numArray[1]=num1;
+					numArray[2]=num2;
+				}	 
+			}
+			
+			else {
+			if(num2<=num3){
+				numArray[0]=num2;
+				if(num1<=num3){
+					numArray[1]=num1;
+					numArray[2]=num3;
+				}
+				else{
+					numArray[1]=num3;
+					numArray[2]=num1;
+				}
+			}
+			else{
+				numArray[0]=num3;
+				numArray[1]=num2;
+				numArray[2]=num1;
+				}	 
+			}
+			console.log(numArray);
+			
+			//Q4
+			if((num1>=num2)&&(num1>=num3)&&(num1>=num4)&&(num1>=num5)){
+				console.log("the max num is "+ num1);
+			}
+			else if((num2>=num1)&&(num2>=num3)&&(num2>=num4)&&(num2>=num5)){
+				console.log("the max num is "+ num2);
+			}
+			else if((num3>=num2)&&(num3>=num1)&&(num3>=num4)&&(num3>=num5)){
+				console.log("the max num is "+ num3);
+			}
+			else if((num4>=num2)&&(num4>=num3)&&(num4>=num1)&&(num4>=num5)){
+				console.log("the max num is "+ num4);
+			}
+			else{
+				console.log("the max num is "+ num5);
+			}
+			//Q4 -simper way of doing so 
+			console.log(Math.max.apply(Math,numArray));
+			
+			
+			
+			
+			
+			//Q5 - CLASS AVRAGE
+			for(i=0;i<5;i++){
+				classAvrage+=students[i].grade;
+			};
+			console.log(classAvrage);
+			classAvrage=classAvrage/students.length;
+			console.log(classAvrage);
+			if(classAvrage>=100){
+				console.log("טוב מאוד !!");
+			}
+			else if(classAvrage>=90){
+				console.log("טוב  ");
+			}
+			else if(classAvrage>=80){
+				console.log("בנוני");
+			}
+			else if(classAvrage>=70){
+				console.log("גרוע");
+			}
+			else{
+				console.log("גרוע מאוד ");
+			}
+			
+			
+			// FOR FUN - CHECKING EACH STUDENT LEVEL :
+			//Q5
+
+				for ( i = 0; i < 5; i++) {
+					if (students[i].grade >= 90) {
+						console.log(students[i].name+" has got an A");
+					} else if (students[i].grade >= 80) {
+						console.log(students[i].name+" has got a B");
+					} else if (students[i].grade >= 70) {
+						console.log(students[i].name+" has got a C");
+					} else if (students[i].grade >= 60) {
+						console.log(students[i].name+" has got a D");
+					}
+					else{
+						console.log(students[i].name+" has failed");
+					}
+				}
+
+		</script>
+
+	</body>
+
+</html>

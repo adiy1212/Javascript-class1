@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> arrays </title>
+
+	</head>
+
+	<body>
+
+		<p>
+
+		</p>
+
+		<br />
+
+		<script>
+			var evenNumbers = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+			var mix,
+			    temp;
+			var student1,
+			    studen2,
+			    student3,
+			    student4,
+			    student5,
+			    student6,
+			    student7,
+			    student8;
+			var webClass;
+			document.write(evenNumbers);
+			//array length//
+			document.write("<br>" + evenNumbers.length);
+			//array index//
+			document.write("<br>" + evenNumbers[0]);
+			document.write("<br>" + evenNumbers[2]);
+			document.write("<br>" + evenNumbers[5]);
+
+			document.write("<br>" + evenNumbers.indexOf(10));
+			
+			// delete from array//
+			evenNumbers.splice(8, 2);
+			document.write("<br>" + evenNumbers);
+			
+			//mixed array//
+			mix = [2, "two", 3, "three", 4, "four"];
+			document.write("<br>" + mix);
+			
+			//objects array//
+			student1 = {
+				"name" : "Evyatar",
+				"eyecolor" : "black",
+				"height" : 1.7
+			};
+			student2 = {
+				"name" : "Timor",
+				"eyecolor" : "red",
+				"height" : 1.72
+			};
+			student3 = {
+				"name" : "Shlomi",
+				"eyecolor" : "brown",
+				"height" : 1.8
+			};
+			student4 = {
+				"name" : "Ehud",
+				"eyecolor" : "black",
+				"height" : 1.75
+			};
+			student5 = {
+				"name" : "Doron",
+				"eyecolor" : "green",
+				"height" : 1.69
+			};
+			student6 = {
+				"name" : "Diana",
+				"eyecolor" : "blue",
+				"height" : 1.84
+			};
+			student7 = {
+				"name" : "Ofer",
+				"eyecolor" : "brown",
+				"height" : 1.72
+			};
+			student8 = {
+				"name" : "Drora",
+				"eyecolor" : "black",
+				"height" : 1.78
+			};
+
+			webClass = [student1, student2, student3, student4, student5, student6, student7, student8];
+			document.write("<br>" + webClass[0].name);
+			console.log(webClass);
+			
+			//delete first index//
+			temp = webClass.shift();
+			
+			// adding teacher element at the first spot//
+			var teacher = {
+				"name" : "Shai",
+				"eyecolor" : "",
+				"height" : 1.89
+			};
+			webClass.unshift(teacher);
+			console.log(webClass);
+			document.write("<br>" + webClass[0].name);
+			document.write("<br>" + webClass[1].name);
+			
+			//ex 10 - updating the first index to face element intead of eyecolor
+			delete webClass[0].eyecolor;
+			webClass[0].face = {
+				eyecolor:{
+				color : "green"
+			}
+			};
+			console.log(webClass);
+			
+
+		</script>
+
+	</body>
+
+</html>
