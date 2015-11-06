@@ -1,0 +1,56 @@
+body {
+	direction: rtl;
+	text-align: right;
+}
+/* nav menu design */
+ul.navmenu{
+	
+}
+ul.navmenu li{
+	display: inline-block;
+	border: 1px solid #c38338;
+	background:#C2CAD0;
+}
+/* *input design*/
+#galerywrap input {
+	display: block;
+	margin-bottom: 10px;
+}
+select{
+	display:block;
+	
+	 margin: 10px;
+}
+
+/* gallery design */
+.gallery {
+	float: right;
+	border: 1px solid #808080;
+}
+#galerywrap {
+	margin: 0 auto;
+	max-width: 54em;
+}
+
+/* img design   */
+img.none, img.red {
+
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+}
+img.red {
+	border: 1px solid red;
+}
+
+/* caption design */
+.gallery p {
+	margin: 0 auto;
+	max-width: 100px;
+	text-align: center;
+	border: 1px solid #808080;
+}
+
+a{
+	text-decoration: none;
+}

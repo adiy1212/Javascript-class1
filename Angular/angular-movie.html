@@ -1,0 +1,101 @@
+<!DOCTYPE html >
+<html ng-app="moviesApp">
+	<head>
+		<title> movies </title>
+		<meta charset="UTF-8" />
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="angular-move.css">
+
+	</head>
+
+	<body>
+
+		<div ng-controller="moviesController">
+			<h1>שחקנים</h1>
+			<ul class="navmenu">
+				<li>
+					שחקנים
+				</li>
+				<li>
+					המובילים
+				</li>
+				<li>
+					חיפוש
+				</li>
+			</ul>
+			<div id="galerywrap">
+				
+				<!--type to select wanted actors-->
+				שם השחקן הנדרש :
+				<input ng-model="actorName"/>
+				
+				<!-- sort by first name or sur name -->
+				<select ng-model="orderProp">
+					<option value="fname">שם פרטי</option>
+					<option value="sname">שם משפחה</option>
+				</select>
+				
+				<!--div with the actor img first name and sur name -->
+				<div class="gallery"   ng-repeat="Actorimg in actors | filter: actorName | orderBy: orderProp" >
+					<img class="{{Actorimg.picColor}}" ng-src="{{Actorimg.pic}}" ng-click="ChangFrameColor(Actorimg)" >
+					<p >
+						<a ng-href="{{Actorimg.mdb}}">{{Actorimg.fname}} {{Actorimg.sname}}</a>
+					</p>
+				</div>
+				
+				<!--end of gallery wrap-->
+			</div>
+				<!--end of ng controller = moviecontroller-->
+		</div>
+
+		<script>
+			var app = angular.module("moviesApp", []);
+			app.controller("moviesController", function($scope) {
+				$scope.actors = [{
+					fname : "קיאנו",
+					sname : "ריבס",
+					pic : "https://upload.wikimedia.org/wikipedia/he/6/68/Neo.jpeg",
+					picColor:"none",
+					mdb : "http://www.imdb.com/name/nm0000206/?ref_=nv_sr_1"
+				}, {
+					fname : "קמרון",
+					sname : "דיאז",
+					pic : "http://images1.calcalist.co.il/PicServer2/20122005/404445/AP0NYEA103_l.jpg",
+					picColor:"none",
+					mdb : "http://www.imdb.com/name/nm0000139/?ref_=nv_sr_3"
+				}, {
+					fname : "ג'ייסון",
+					sname : "סטאת'ם",
+					pic : "http://assets2.ignimgs.com/2015/05/15/jason-statham-spy-movie-1280jpg-4cf7b9.jpg",
+					picColor:"none",
+					mdb : "http://www.imdb.com/name/nm0005458/?ref_=nv_sr_1"
+				}, {
+					fname : "גל",
+					sname : "גדות",
+					pic : "http://images1.ynet.co.il/xnet//PicServer2/pic/20122006/101874/7_735.jpg",
+					picColor:"none",
+					mdb : "http://www.imdb.com/name/nm2933757/?ref_=nv_sr_1"
+				}, {
+					fname : "ויין",
+					sname : "דיזל",
+					pic : "http://www.sratim.co.il/photos/actors/normal/2/942_20120814095700_423948587585.jpg",
+					picColor:"none",
+					mdb : "http://www.imdb.com/name/nm0004874/?ref_=nv_sr_4"
+				}];
+				
+				$scope.orderProp = 'fname';
+				$scope.orderProp = 'sname';
+				
+				$scope.ChangFrameColor= function(data){
+					if(data.picColor==="none"){
+					data.picColor="red";
+					}
+					else{
+					data.picColor="none";	
+					}
+				};
+			});
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+
+div.board{
+	margin: 100px auto;
+	max-width: 200px;
+	
+}
+div.cells{
+	display: inline-block;
+	border: 1px solid gray;
+	width: 50px;
+	height: 50px;	
+}
