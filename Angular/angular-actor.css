@@ -8,8 +8,10 @@ ul.navmenu{
 }
 ul.navmenu li{
 	display: inline-block;
-	border: 1px solid #c38338;
+	border: 1px solid #C2CAD0;
 	background:#C2CAD0;
+	margin-left: 5px;
+	padding: 2px;
 }
 /* *input design*/
 #galerywrap input {

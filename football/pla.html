@@ -1,0 +1,6 @@
+<div class="player {{player.position}}" ng-repeat="player in myplayers | filter: {foot: byFoot}">
+	<span class="num">{{player.num}}</span>
+	<br/>
+	<span class="fname">{{player.firstName}} {{player.lastName}}</span>
+	<br />
+</div>

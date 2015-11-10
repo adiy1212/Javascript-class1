@@ -1,0 +1,31 @@
+body{
+	text-align: right;
+	direction: rtl;
+	
+}
+#field{
+	background: url("http://www.cliparthut.com/clip-arts/1769/soccer-field-1769287.png") no-repeat 0 0 ;
+	width: 426px;
+	height:592px;
+	margin:0 auto;
+	float:right;
+	position: relative;
+}
+form{
+	position: relative;
+	width: 200px;
+	float:right;
+	
+}
+#teamLe{
+	
+}
+#teamLe select{
+	display: block;
+	
+}
+#footSel{
+	display: inline-block;
+	
+}
+

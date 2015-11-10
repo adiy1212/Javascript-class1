@@ -1,0 +1,68 @@
+[
+    {
+        "firstName": "Dudu", 
+        "lastName": "Goresh", 
+        "num": "1", 
+        "position": "goalkeeper"
+    }, 
+    {
+        "firstName": "Ben", 
+        "lastName": "Bitton", 
+        "num": "2", 
+        "position": "defence right"
+    }, 
+    {
+        "firstName": "Luis", 
+        "lastName": "Suares", 
+        "num": "25", 
+        "position": "defence center-right"
+    }, 
+    {
+        "firstName": "Shir", 
+        "lastName": "Tzedek", 
+        "num": "5", 
+        "position": "defence center-left"
+    }, 
+    {
+        "firstName": "Ofir", 
+        "lastName": "Davidzada", 
+        "num": "18", 
+        "position": "defence left"
+    }, 
+    {
+        "firstName": "Ovidiu", 
+        "lastName": "Hoban", 
+        "num": "12", 
+        "position": "midfield center-right"
+    }, 
+    {
+        "firstName": "John", 
+        "lastName": "Ogu", 
+        "num": "30", 
+        "position": "midfield center"
+    }, 
+    {
+        "firstName": "Maharan", 
+        "lastName": "Radi", 
+        "num": "7", 
+        "position": "midfield center-left"
+    }, 
+    {
+        "firstName": "Elyaniv", 
+        "lastName": "Barda", 
+        "num": "10", 
+        "position": "attack center"
+    }, 
+    {
+        "firstName": "Maor", 
+        "lastName": "Melikson", 
+        "num": "24", 
+        "position": "attack center-right"
+    }, 
+    {
+        "firstName": "Anthony", 
+        "lastName": "Nwakame", 
+        "num": "10", 
+        "position": "attack center-left"
+    }
+]

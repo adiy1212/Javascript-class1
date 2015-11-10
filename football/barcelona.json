@@ -1,0 +1,79 @@
+[
+    {
+        "firstName": "Marc-Andre", 
+        "lastName": "Ter Stegen", 
+        "num": "1", 
+        "position": "goalkeeper",
+        "foot": "right"
+    }, 
+    {
+        "firstName": "Daniel", 
+        "lastName": "Alves", 
+        "num": "6", 
+        "position": "defence right",
+        "foot": "right"
+    }, 
+    {
+        "firstName": "Gerard", 
+        "lastName": "Pique", 
+        "num": "3", 
+        "position": "defence center-right",
+        "foot": "right"
+    }, 
+    {
+        "firstName": "Jeremy", 
+        "lastName": "Mathieu", 
+        "num": "24", 
+        "position": "defence center-left",
+        "foot": "left"
+    }, 
+    {
+        "firstName": "Jordi", 
+        "lastName": "Alba", 
+        "num": "18", 
+        "position": "defence left",
+        "foot": "left"
+    }, 
+    {
+        "firstName": "Sergio", 
+        "lastName": "Busquets", 
+        "num": "5", 
+        "position": "midfield center-right",
+        "foot": "right"
+    }, 
+    {
+        "firstName": "Javier", 
+        "lastName": "Mascherano", 
+        "num": "14", 
+        "position": "midfield center",
+        "foot": "right"
+    }, 
+    {
+        "firstName": "Ivan", 
+        "lastName": "Rakitic", 
+        "num": "4", 
+        "position": "midfield center-left",
+        "foot": "right"
+    }, 
+    {
+        "firstName": "Luis", 
+        "lastName": "Suarez", 
+        "num": "9", 
+        "position": "attack center",
+        "foot": "right"
+    }, 
+    {
+        "firstName": "Lionel", 
+        "lastName": "Messi", 
+        "num": "10", 
+        "position": "attack center-right",
+        "foot": "left"
+    }, 
+    {
+        "firstName": "Neymar", 
+        "lastName": "da Silva", 
+        "num": "11", 
+        "position": "attack center-left",
+        "foot": "both"
+    }
+]

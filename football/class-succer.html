@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="footballApp">
+	<head>
+		<title> football </title>
+		<link type="text/css" rel="stylesheet" href="football.css">
+		<link type="text/css" rel="stylesheet" href="field.css">
+		<meta charset="UTF-8" />
+	</head>
+
+	<body ng-controller="fooballController">
+
+		<form>
+			<div id="teamLe">
+				<select>
+					<optgroup label="ליגה">
+						<option>ספרדית</option>
+						<option>ישראלית</option>
+						<option>צרפתית</option>
+						<option>אנגלית</option>
+					</optgroup>
+				</select>
+
+				<select>
+					<optgroup label="קבוצה">
+						<option>ברצלונה</option>
+					</optgroup>
+				</select>
+				
+				<div ng-click="setTeam('hapoel_beer_sheva.json')">הפועל באר שבע</div>
+			</div>
+		</form>
+
+		<div id="field">
+			<players></players>
+		</div>
+		<form>
+
+			<div id="footSel">
+				<h4> רגל </h4>
+				<label for="right"> ימין</label>
+				<input id="right" type="radio" name="foot" value="right" ng-model="byFoot"/>
+				<label for="left">שמאל</label>
+				<input id="left" type="radio" name="foot" value="left" ng-model="byFoot"/>
+				<label for="both">שתיהן</label>
+				<input id="both" type="radio" name="foot" value="both" ng-model="byFoot"/>
+			</div>
+
+		</form>
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
+		<script src="footballjs.js"></script>
+
+	</body>
+
+</html>

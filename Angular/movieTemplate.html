@@ -1,0 +1,20 @@
+<div ng-controller="moviesController">
+	<p> חיפוש הסרט הרצוי: </p>
+	<input ng-model="movieSearch" />
+	<br />
+	
+	<p>  מיון הסרטים על פי אורך הסרט : </p>
+	<select ng-model="orderProp">
+		<option value="length"> אורך הסרט</option>
+		<option value="name">שם הסרט</option>
+		<option value="director"> במאי</option>
+	</select>
+	
+	<ul ng-repeat="chosenMovie in movieList | filter: movieSearch | orderBy: orderProp">
+		<li><a href={{chosenMovie.imdb}}> שם הסרט: {{chosenMovie.name}}   </a> </li>
+		<li>אורך הסרט : {{chosenMovie.length}}  </li>
+		<li>במאי הסרט :  {{chosenMovie.director}} </li>
+		<li>שחקנים ראשיים : {{chosenMovie.actors}}</li>
+	</ul>
+		
+</div>
