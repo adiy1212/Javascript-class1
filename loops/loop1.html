@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+	</head>
+
+	<body>
+
+		<script>
+			var i;
+			var j;
+			var star = "";
+			var students = [{
+				name : "Timor",
+				height : 1.78
+			}, {
+				name : "Evyatar",
+				height : 1.75
+			}, {
+				name : "Doron",
+				height : 1.79
+			}];
+
+			// task 1//
+			for ( i = 120; i < 141; i++) {
+				document.write(i + "");
+				console.log(i);
+			}
+			//task 2 //
+			for ( j = 1; j <= 5; j++) {
+				star = star + "*";
+				console.log(star);
+			}
+			// task 3//
+
+			for ( i = 0; i < students.length; i++) {
+
+				console.log(students[i].name + "height is :" + students[i].height);
+				
+
+			}
+
+			for ( i = 0; i < students.length; i++) {
+
+				
+				students[i].height = 1.75;
+				console.log(students[i].name + "height is :" + students[i].height);
+
+			}
+
+		</script>
+
+	</body>
+
+</html>
