@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> functions </title>
+		<meta charset="UTF-8">
+		<link type="text/css" rel="stylesheet" href="functions.css">
+
+	</head>
+
+	<body>
+		<div id="exc1">
+			<h2> תרגיל מס 1</h2>
+			<label> הכנס מספר ראשון :</label>
+			<input type="number" id="firstNum"  />
+
+			<label> הכנס מספר שני :</label>
+			<input type="number" id="secNum" />
+
+			<input type="button" onclick="showTheHigher()" value="חשב">
+
+			<div id="higherNum"></div>
+		</div>
+
+		<div id="exc2">
+			<h2>תרגיל מס 2 </h2>
+			<label> הכנס מספר ראשון למיון :</label>
+			<input type="number" id="sortfirstNum"  />
+			<br />
+			<label> הכנס מספר שני למיון:</label>
+			<input type="number" id="sortsecNum" />
+			<br />
+			<label> הכנס מספר שני למיון:</label>
+			<input type="number" id="sortthirdNum" />
+			<br />
+			<input type="button" onclick="sortNums()" value="מיין">
+
+			<div id="sortednums"></div>
+
+		</div>
+
+		<div id="exc3">
+			<h2>תרגיל מס 3</h2>
+			<label> הכנס מילה : </label>
+			<input type="text" id="word"  />
+			<br />
+			<label> הכנס אות לחיפוש :</label>
+			<input type="text" id="letter" />
+			<br />
+			<input type="button" onclick="findLetter()" value="חפש">
+
+			<div id="numofletters"> </div>
+
+		</div>
+
+		<div id="exc4">
+				<h2>תרגיל מס 4</h2>
+				
+				<div id="gallery">
+					
+					<div id= 'israel' class="flag" onmouseover= "showName(this.id)" onmouseout= "hideName(this.id)">  <span>Israel</span></div>
+					<div id= 'usa'class="flag" onmouseover= "showName(this.id)" onmouseout= "hideName(this.id)"> <span>USA</span></div>
+					<div id= 'italy' class="flag" onmouseover= "showName(this.id)" onmouseout= "hideName(this.id)">  <span>Italy</span></div>
+					<div id= 'holland' class="flag" onmouseover= "showName(this.id)" onmouseout= "hideName(this.id)"> <span>Holland</span></div>
+					<div id= 'france' class="flag" onmouseover= "showName(this.id)" onmouseout= "hideName(this.id)"> <span>France</span> </div>
+					
+					
+				</div>
+				
+		</div>
+
+		<script src="function1.js"></script>
+	</body>
+
+</html>

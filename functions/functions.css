@@ -1,0 +1,42 @@
+body{
+	direction:rtl;
+	text-align: right;
+}
+
+
+
+/*
+	exc 4 
+*/
+.flag{
+	position:relative;
+	display: inline-block;
+	vertical-align: top;
+	background-size:100% 100%;
+	border: 1px solid #d45312;
+	width:200px;
+	height: 200px;
+	margin-left: 10px;
+	font-size: 50px;
+	color: gray;
+	
+}
+#gallery span {
+	 position: absolute;
+    top: 60px;
+    right: 35px;
+    display:none;
+}
+#israel{
+	background: url("http://rs277.pbsrc.com/albums/kk77/mason256ls/IsraelFlag_med.gif~c200") no-repeat 0 0 ;
+}
+#usa{
+	background: url("http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/0020/7657/brand.gif?itok=b4tM_qWs") no-repeat 0 0 ;
+}#italy{
+	background: url("http://rs408.pbsrc.com/albums/pp164/vaccaz/Italy-flag.jpg~c200") no-repeat 0 0 ;
+}#holland{
+	background: url("http://rs1004.pbsrc.com/albums/af162/KikiGooner/Netherlands.png~c200") no-repeat 0 0 ;
+}
+#france{
+	background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_colors_of_France_-Template.svg/200px-Flag_colors_of_France_-Template.svg.png") no-repeat 0 0 ;
+}
